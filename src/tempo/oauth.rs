@@ -184,7 +184,7 @@ pub mod server {
                     "Success! You can now close this tab"
                 } else {
                     error!("Failed to get Notifier");
-                    "Something went terribly wrong, leave your house immediatly"
+                    "Something went terribly wrong, leave your house immediately"
                 }
             }
 

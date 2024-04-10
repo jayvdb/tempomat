@@ -49,7 +49,7 @@ impl APITokens {
         Ok(Self { tempo, jira })
     }
 
-    /// Refreshes tokens if necesarry, returns true if the token was refreshed
+    /// Refreshes tokens if necessary, returns true if the token was refreshed
     pub async fn refresh_tokens(&mut self) -> Result<bool, TempomatError> {
         if (Utc::now().naive_utc() - self.tempo.last_refresh)
             > Duration::seconds(self.tempo.tokens.expires_in as i64)

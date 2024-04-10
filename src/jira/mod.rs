@@ -18,7 +18,7 @@ pub struct AtlassianTokens {
     pub email: String,
 }
 
-/// Retreives the token from CLI
+/// Retrieves the token from CLI
 pub fn get_token() -> Result<AtlassianTokens, TempomatError> {
     fn prompt(prompt: &str) -> Result<String, TempomatError> {
         let mut response = String::new();
